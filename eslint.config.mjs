@@ -14,7 +14,7 @@ const eslintConfig = [
   {
     rules: {
       // Allow empty types
-      "@typescript-eslint/no-empty-type": "off", // Disables rule for empty types
+      "@typescript-eslint/no-empty-object-type": "off", // Disables rule for empty types
 
       // Optionally, disable empty interface rule as well
       "@typescript-eslint/no-empty-interface": "off", // Disables rule for empty interfaces
