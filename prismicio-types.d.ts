@@ -382,11 +382,7 @@ export interface SkyDiveSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   flavor: prismic.SelectField<
-    | "lemonLime"
-    | " grape"
-    | "blackCherry"
-    | "strawberryLemonade"
-    | "watermelon",
+    "lemonLime" | "grape" | "blackCherry" | "strawberryLemonade" | "watermelon",
     "filled"
   >;
 }
