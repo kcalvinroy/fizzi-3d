@@ -12,12 +12,19 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
+    files: ["**/*.ts", "**/*.tsx"],
+    plugins: {
+      "@typescript-eslint": typescriptPlugin,
+    },
+    languageOptions: {
+      parser: typescriptParser,
+    },
     rules: {
       "@typescript-eslint/ban-types": [
         "error",
         {
           types: {
-            "{}": false, // Allow empty object type
+            "{}": false,
           },
           extendDefaults: true,
         },
