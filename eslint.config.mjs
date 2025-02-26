@@ -12,23 +12,12 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
-    files: ["**/*.ts", "**/*.tsx"],
-    plugins: {
-      "@typescript-eslint": typescriptPlugin,
-    },
-    languageOptions: {
-      parser: typescriptParser,
-    },
     rules: {
-      "@typescript-eslint/ban-types": [
-        "error",
-        {
-          types: {
-            "{}": false,
-          },
-          extendDefaults: true,
-        },
-      ],
+      // Allow empty types
+      "@typescript-eslint/no-empty-type": "off", // Disables rule for empty types
+
+      // Optionally, disable empty interface rule as well
+      "@typescript-eslint/no-empty-interface": "off", // Disables rule for empty interfaces
     },
   },
 ];
