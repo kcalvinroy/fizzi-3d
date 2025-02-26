@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import FloatingCan from "@/components/FloatingCan";
+import { Content } from "@prismicio/client";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
