@@ -110,6 +110,7 @@ const Carousel: FC<CarouselProps> = ({ slice }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className="carousel relative grid h-screen grid-rows-[auto,4fr,auto] justify-center overflow-hidden bg-white py-12 text-white"
+      id="carousel"
     >
       <div className="background pointer-events-none absolute inset-0 bg-[#710523] opacity-50" />
 
